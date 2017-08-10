@@ -7,8 +7,10 @@
 
 ## Provided templates
 
+* `CentOS-6.9-x86_64.json`: Minimal vanilla CentOS 6.9 installation with a multi-partition setup using LVM
 * `CentOS-7-1511-x86_64.json`: Minimal vanilla CentOS 7.2 (1511) installation with a multi-partition setup using LVM
-* `Debian-Jessie-8.4-x86_64`: Minimal vanilla Debian Jessie 8.4 installation with a multi-partition setup using LVM
+* `Debian-Jessie-8.5-x86_64`: Minimal vanilla Debian Jessie 8.5 installation with a multi-partition setup using LVM
+* `Debian-Stretch-9.1-x86_64`: Minimal vanilla Debian Stretch 9.1 installation with a multi-partition setup using LVM
 
 ## Building a box 
 

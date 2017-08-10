@@ -3,7 +3,8 @@
 	"user": "vagrant",
 	"password": "vagrant",
 	"disk_size": "100000",
-	"debian_mirror": "http://mirror.switch.ch/ftp/mirror/debian-cd"
+	"debian_mirror": "http://mirror.switch.ch/ftp/mirror/debian-cd",
+	"debian_version": "9.1.0"
   },
 
   "builders": [
@@ -13,8 +14,8 @@
 	  "accelerator": "kvm",
 	  "disk_size": "{{user `disk_size`}}",
 
-      "iso_url": "{{user `debian_mirror`}}/8.4.0/amd64/iso-cd/debian-8.4.0-amd64-netinst.iso",
-      "iso_checksum": "7a6b418e6a4ee3ca75dda04d79ed96c9e2c33bb0c703ca7e40c6374ab4590748",
+      "iso_url": "{{user `debian_mirror`}}/{{user `debian_version`}}/amd64/iso-cd/debian-{{user `debian_version`}}-amd64-netinst.iso",
+      "iso_checksum": "c9e070074de83aa22e141f59a423e5210a5019b369ef1efe61a2afd44ba8f371",
       "iso_checksum_type": "sha256",
 
       "http_directory": "http",
@@ -61,7 +62,7 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "output": "box/Debian-Jessie-8.4-x86_64-{{.Provider}}.box",
+      "output": "box/Debian-Stretch-{{user `debian_version`}}-x86_64-{{.Provider}}.box",
 	  "keep_input_artifact": false
     }
   ]

@@ -12,7 +12,7 @@
 	  "accelerator": "kvm",
 	  "disk_size": "{{user `disk_size`}}",
 
-      "iso_url": "http://ftp.iij.ad.jp/pub/linux/centos/7/isos/x86_64/CentOS-7-x86_64-NetInstall-1511.iso",
+      "iso_url": "https://buildlogs.centos.org/rolling/7/isos/x86_64/CentOS-7-x86_64-NetInstall-1511.iso",
       "iso_checksum": "9ed9ffb5d89ab8cca834afce354daa70a21dcb410f58287d6316259ff89758f5",
       "iso_checksum_type": "sha256",
 
